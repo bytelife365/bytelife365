@@ -1,1 +1,6 @@
-theme: jekyll-theme-cayman
+safe: false
+lsi: false
+rouge: true
+markdown: kramdown
+permalink: /blog/:year/:month/:title.html
+encoding: UTF-8
