@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {% if page.subtitle == 0 %}
+        <meta name="description" content="{{ page.title }}" />
+        <title>{{ page.title }}</title>
+    {% else %}
+        <meta name="description" content="{{ page.title }}_小说" />
+        <title>{{ page.title }} - 小说</title>
+    {% endif %}
+
+    <meta name="keywords" content="{{ page.title }},小说网站，精选玄幻小说、言情小说、热点小说、经典小说等" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico">
+    <link rel="stylesheet" href="/public/css/base.css">
+    <link rel="stylesheet" href="/public/back2top/back2top.css">
+
+
+    <link rel="stylesheet" href="/public/css/normalize.css">
+    <link rel="stylesheet" href="/public/css/qit.css?v=1.3">
+
+</head>
+<body>
+
+{% if page.nav != 0 %}
+    {% include nav.html %}
+{% endif %}
+

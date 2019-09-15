@@ -1,0 +1,24 @@
+---
+title: 首页
+---
+{% include head.html %}
+
+<div class="container">
+    <div class="post-lists">
+
+        <ul class="post-list">
+            <li title="{{ post.title | strip_html }}" class="article-info">
+                <img src="/public/images/avatar/qit.jpg" height="30" />
+                <a href="/books/baiyexing" class="x-title"><span>小说列表之白夜行</span></a>
+                <div class="date">小说列表之白夜行</div>
+                <div class="x-digest">小说列表之白夜行</div>
+                <hr/>
+                <div class="x-tag">小说列表之白夜行</div>
+            </li>
+        </ul>
+    </div>
+
+    <!--{% include sidebar.html %}-->
+</div>
+
+{% include foot.html %}
